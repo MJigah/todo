@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "text": "Clean Apartment",
+      "active": false
+    },
+    {
+      "id": 2,
+      "text": "Take out the trash",
+      "active": false
+    },
+    {
+      "id": 3,
+      "text": "Walk Dogs to park",
+      "active": false
+    }
+  ]
+}
