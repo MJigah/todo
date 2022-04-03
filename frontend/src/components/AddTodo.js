@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux';
+import { addTodo } from '../actions/todoActions';
 
 const AddTodo = ({ todos, onAdd }) => {
-
+    const dispatch = useDispatch();
     const [text, setText] = useState('');
     const [active, setActive] = useState(true);
 
     const onSubmit = (e) => {
         e.preventDefault();
-        onAdd({text, active});
+        dispatch(addTodo(text, active))
+        // onAdd({text, active});
         setText('');
     }
 

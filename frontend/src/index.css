@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: .03px;
+}
+
+li{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  background: #fff;
+}
+
+.header-ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem .6rem;
+  background-image: linear-gradient(to right , rgb(193, 193, 224), rgba(193, 193, 224, 0.507));
+  font-size: .9rem;
+}
+
+.res-btn{
+  padding: 6px 9px;
+  border: none;
+  border-radius: 4px;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.todo-section{
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  margin: 60px auto;
+  width: 45%;
+  box-shadow: 0 0 15px rgb(102, 102, 102);
+  font-size: .9rem;
+}
+
+.todo-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem .8rem;
+  background: rgba(193, 193, 224, 0.507);
+  color: rgb(94, 94, 94);
+  font-size: .9rem;
+}
+
+.todo-head > span{
+  font-size: 1.2rem;
+  font-weight: 200;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.todo-input{
+  width: 100%;
+  padding: 15px;
+  font-size: .9rem;
+  border: none;
+  letter-spacing: .01rem;
+  background:rgb(236, 236, 236);
+}
+
+.todo-input:focus{
+  outline: none;
+}
+
+/* .todo-div{
+  padding: 8px 0;
+} */
+
+.todo-ul{
+  background: #fff;
+}
+
+.todo-ul li{
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 15px;
+  line-height: 55px;
+}
+
+.todo-ul li:nth-of-type(even){
+  background:rgb(231, 231, 231);
+}
+
+.todo-ul li p,
+.todo-ul li span{
+  cursor: pointer;
+}
+
+.strike-through{
+  text-decoration: line-through;
+  color: grey;
+}

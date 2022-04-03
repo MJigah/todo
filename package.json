@@ -1,48 +1,33 @@
 {
   "name": "todo",
-  "version": "0.1.0",
-  "homepage": "http://MJigah.github.io/todo",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.15.0",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "json-server": "^0.17.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
-  },
+  "type": "module",
+  "version": "1.0.0",
+  "description": "New todo react app with backend",
+  "main": "app.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "todo -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 7000"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/app.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MJigah/todo.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "Todo"
+  ],
+  "author": "Jigah Miracle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MJigah/todo/issues"
+  },
+  "homepage": "https://github.com/MJigah/todo#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.2.9",
+    "redux-thunk": "^2.4.1"
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3",
-    "todo": "^1.1.0"
+    "nodemon": "^2.0.15"
   }
 }

@@ -1,11 +1,6 @@
 {
   "todos": [
     {
-      "text": "Do assignment",
-      "active": true,
-      "id": 6
-    },
-    {
       "text": "Wash Clothes",
       "active": true,
       "id": 7
@@ -16,9 +11,14 @@
       "id": 8
     },
     {
-      "text": "emergency : Slap eloisa hard!!!",
+      "text": "Do other Chores",
       "active": true,
       "id": 9
+    },
+    {
+      "text": "Prepare Breakfast!",
+      "active": true,
+      "id": 10
     }
   ]
 }
